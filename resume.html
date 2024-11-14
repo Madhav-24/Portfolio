@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhav Sudalaimani's Portfolio</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Header styling with animation */
+    header {
+      background: linear-gradient(135deg, #4b79a1, #283e51);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: slideIn 1.5s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    /* Container and section styling with fade-in animation */
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    .section:nth-child(even) {
+      animation-delay: 0.5s;
+    }
+
+    h2 {
+      color: #007bff;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    /* Hover animations for links */
+    .contact-info a,
+    .project-list a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-info a:hover,
+    .project-list a:hover {
+      color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Madhav Sudalaimani</h1>
+    <p>Artificial Intelligence and Data Science Graduate | Python Developer | Machine Learning Enthusiast</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Professional Summary Section -->
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Recent graduate in Artificial Intelligence and Data Science with strong Python skills. Proficient in machine learning, natural language processing, and data visualization. Eager to leverage my technical background and passion for technology in an entry-level role to support business growth and enhance decision-making.</p>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="section">
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:madhav.sudalaimani@gmail.com">madhav.sudalaimani@gmail.com</a></p>
+        <p>Phone: +91 8870672183</p>
+        <p>Location: Coimbatore, Tamil Nadu, India</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/madhav-sudalaimani/">https://www.linkedin.com/in/madhav-sudalaimani/</a></p>
+        <p>GitHub: <a href="https://github.com/Madhav-24">https://github.com/Madhav-24</a></p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><strong>Languages:</strong> Python, SQL</li>
+        <li><strong>Technologies & Tools:</strong> Machine Learning Algorithms, Docker, PowerBI, MySQL Workbench, FlutterFlow, Figma</li>
+      </ul>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="section">
+      <h2>Internship</h2>
+      <p><strong>Customer Centria, Coimbatore</strong> (June 2023 - November 2023)</p>
+      <p>Completed an internship in Marketing Automation Technology, gaining experience with Tableau, MySQL, and proprietary software. Enhanced skills in data visualization and database management.</p>
+      <p><strong>Technologies:</strong> MySQL Workbench, Tableau</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+      <h2>Education</h2>
+      <ul class="education">
+        <li><strong>Sri Ramakrishna Engineering College</strong> (September 2020 - May 2024)<br>Bachelor of Technology in Artificial Intelligence and Data Science <br> CGPA: 8.03</li>
+        <li><strong>Sri Ramakrishna Matriculation Higher Secondary School</strong> (March 2020)<br>HSC: 63.16%</li>
+        <li><strong>Sri Ramakrishna Matriculation Higher Secondary School</strong> (March 2018)<br>SSLC: 81.4%</li>
+      </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+      <h2>Project Work</h2>
+      <ul class="project-list">
+        <li><strong>Blockchain-based DNS Modification Module for Fast Flux Attack:</strong> Combats Fast Flux botnets by identifying malicious domains, storing them on a blockchain ledger, and blocking access via modified DNS resolvers. <a href="https://drive.google.com/file/d/18SahBNuE5SCyHotfFcAyI_CFjg-2kzI8/view">Published in International Conference on Hybrid and Advanced Technologies - 2024</a>. <a href="https://github.com/Madhav-24/deduct-fastflux-attack">GitHub Link</a>.</li>
+        <li><strong>Multiple Person and Object Tracking:</strong> A security-focused project for tracking individuals and objects in public spaces.</li>
+        <li><strong>Smart Bin System for Rural Area:</strong> Monitors garbage levels in bins and alerts supervisors, with sensors for automatic notifications.</li>
+        <li><strong>Docker Profile Generator:</strong> Deploys and runs applications efficiently in a virtual environment, optimizing storage and time.</li>
+      </ul>
+    </div>
+
+    <!-- Certificates Section -->
+    <div class="section">
+      <h2>Certificates</h2>
+      <ul class="certificates">
+        <li>Python Basics for Data Science on Edx, powered by IBM | <a href="https://courses.edx.org/certificates/57c272c86e2b4612a2d5b85680aed687?_gl=1%2A1o5npjz%2A_gcl_au%2ANDA3MzM4MTQ1LjE3MTIwMzcxODg.%2A_ga%2ANjM1OTEwMzY5LjE3MTIwMzcxODg.%2A_ga_D3KS4KMDT0%2AMTcxOTI0MDM0My4yLjEuMTcxOTI0MDQyMC42MC4wLjA">Link</a></li>
+        <li>Blockchain 101 on Infosys Springboard | <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01255779688268595211_shared/1-e0fc8a11-4c42-40e6-9d35-b4b28cf2b4d2.pdf">Link</a></li>
+        <li>Docker: A Project-Based Approach to Learning on Udemy | <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-c402cdff-d216-4675-8928-f6eb186bd689.pdf">Link</a></li>
+        <li>100 Days of Code: The Complete Python Pro Bootcamp on Udemy | <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-22c3f236-ecf7-4319-8486-0fea60489c0c.pdf">Link</a></li>
+        <li>Blockchain A-Z: Build a Blockchain, a Crypto + ChatGPT Prize on Udemy | <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-2751c367-e1be-4b30-9067-04cfd69a742d.pdf">Link</a></li>
+        <li>Build a Chat Messaging App with FlutterFlow & Firebase on Udemy | <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d1dac596-a391-4aa3-873b-e9c8d3a54510.pdf">Link</a></li>
+        <li>FlutterFlow & Firebase Crash Course - Build Your First App on Udemy | <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3fdfc077-5156-45ce-a5a3-dc8e3b3784c5.pdf">Link</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Madhav Sudalaimani
+  </footer>
+</body>
+</html>
